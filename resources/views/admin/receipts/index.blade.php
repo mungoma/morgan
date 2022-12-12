@@ -25,7 +25,7 @@
 					<ul class="m-portlet__nav">
 						@if(Auth::user()->hasRole('admin'))
 							<li class="m-portlet__nav-item">
-								<a href="{{ url('new-expenditure') }}" class="btn btn-primary m-btn  m-btn--custom m-btn--icon m-btn--air">
+								<a href="{{ url('new-receipt') }}" class="btn btn-primary m-btn  m-btn--custom m-btn--icon m-btn--air">
 									<span>
 										<i class="la la-user"></i>
 										<span>

@@ -13,7 +13,7 @@
 		<!-- END: Subheader -->
 
         <div class="m-content">
-            @foreach($expenses as $expense)
+            @foreach($invoices as $expense)
                 <div class="row">
 
 

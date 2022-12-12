@@ -69,7 +69,7 @@
                                         @endforeach
                                     </td>
 
-                                    @foreach ($invoice->invoice_details as $id)
+                                    @foreach ($invoices as $id)
                                         <td>
 
                                             <strong> Month:- </strong> {{ $id['month'] }}<br>

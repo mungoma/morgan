@@ -48,9 +48,10 @@ class InvoiceController extends Controller
                 $invoice->invoice_no = mt_rand(100000, 999999);
                 $invoice->unit_id = $request->unit_id;
 
-                foreach ($water_bill as $bill) {
-                }
-                $invoice_details[] = [
+                $invoice_details = new Invoice();
+                foreach ($water_bill as $bill)
+
+                $invoice_details = [
                     'current_readings' => $bill->current_readings,
                     'previous_readings' => $bill->previous_readings,
                     'consumed_units' => $bill->current_readings - $bill->previous_readings,

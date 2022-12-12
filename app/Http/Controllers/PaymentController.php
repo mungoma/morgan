@@ -2,15 +2,24 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Payment;
+use App\User;
+use App\Vehicle;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Validator;
 
 class PaymentController extends Controller
 {
-    public function users()
+    public function index()
     {
-        return View('admin.payments.index')
-            ->with('payments', Payment::orderBy('created_at', 'desc')->get());
+        return View('admin.payments.index',['users'=>User::all(),
+                                            'vehicles'=>Vehicle::all()
+
+        ])->with('payments', Payment::orderBy('created_at', 'desc')->get());
     }
 
     public function create()

@@ -39,7 +39,7 @@
 
 				@if(Auth::user()->hasRole('admin'))
 
-						<form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" method="POST" action="{{ url('new-expenditure') }}" autocomplete="off"  enctype="multipart/form-data">
+						<form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" method="POST" action="{{ url('new-receipt') }}" autocomplete="off"  enctype="multipart/form-data">
 							{{ csrf_field() }}
 							<div class="m-portlet__body">
 								<div class="form-group m-form__group row">

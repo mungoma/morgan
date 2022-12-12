@@ -90,14 +90,15 @@ Admin Dashboard
                         </div>
                         <div class="col-md-12 col-lg-6 col-xl-4">
                             <!--begin::New Orders-->
+
                             <div class="m-widget24">
                                 <div class="m-widget24__item">
                                     <h4 class="m-widget24__title">
-                                        Vehicles
+                                        Users
                                     </h4>
                                     <br>
                                     <span class="m-widget24__stats m--font-danger">
-                                        {{ $vehicles->count() }}
+                                        {{ $users->count() }}
                                     </span>
                                     <div class="m--space-10"></div>
                                     <div class="progress m-progress--sm">

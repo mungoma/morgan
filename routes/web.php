@@ -1,10 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
-Route::redirect('/', 'admin-dash', 301);
-Route::redirect('home', 'admin-dash', 301);
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin-dash', 'AdminController@index');
